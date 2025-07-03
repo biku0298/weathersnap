@@ -1,0 +1,226 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    font-family: 'Audiowide', sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: var(--text);
+    transition: background 0.3s ease, color 0.3s ease;
+    position: relative;
+  }
+  .title,
+h2,
+h3 {
+  font-family: 'Sour Gummy', sans-serif;
+}
+
+  
+  .container {
+    width: 100%;
+    max-width: 900px; /* was 600px */
+    background-color: #ffffffcc;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  
+  .title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .input-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .input-box input {
+    flex: 1 1 60%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #0077b6;
+    border-radius: 8px;
+  }
+  
+  .input-box button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    background-color: #0077b6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .input-box button:hover {
+    background-color: #023e8a;
+  }
+  
+  .weather-card {
+    background-color: #caf0f8;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .weather-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  
+  .weather-card p {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+  
+  .location-box h2 {
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .location-box button {
+    padding: 10px 20px;
+    background-color: #00b4d8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .location-box button:hover {
+    background-color: #0077b6;
+  }
+  
+  /* Forecast Styling */
+  .forecast-container {
+    margin-top: 30px;
+    text-align: left;
+  }
+  
+  .forecast-container h2 {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .forecast-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+  }
+  
+  .forecast-card {
+    background: #e3f2fd;
+    border-radius: 12px;
+    padding: 10px;
+    width: 160px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 0.85rem;
+  }
+  
+  .forecast-card img {
+    width: 48px;
+    height: 48px;
+  }
+  
+  .weather-info {
+    font-weight: bold;
+    margin-top: 8px;
+  }
+  
+  .error-msg {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  :root {
+    --bg: #ffffffcc;
+    --text: #000;
+    --card-bg: #caf0f8;
+    --input-bg: #fff;
+  }
+  
+  body.dark {
+    --bg: #1e1e1e;
+    --text: #fff;
+    --card-bg: #2e2e2e;
+    --input-bg: #2a2a2a;
+    background: linear-gradient(135deg, #121212, #2a2a2a); /* darker gradient */
+  }
+  
+  
+  body {
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: var(--text);
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  body {
+    transition: background 0.5s ease, color 0.5s ease;
+  }
+  
+  .container {
+    background-color: var(--bg);
+    transition: background 0.3s ease;
+  }
+  
+  input {
+    background-color: var(--input-bg);
+    color: var(--text);
+    border: 2px solid #0077b6;
+  }
+  
+  .weather-card {
+    background-color: var(--card-bg);
+    color: var(--text);
+  }
+  
+  .forecast-card {
+    background-color: var(--card-bg);
+    color: var(--text);
+  }
+  
+  .theme-toggle {
+    margin-left: auto;
+    display: block;
+    margin-bottom: 20px;
+    padding: 8px 14px;
+    font-size: 0.95rem;
+    background-color: transparent;
+    border: 2px solid #0077b6;
+    border-radius: 8px;
+    color: var(--text);
+    cursor: pointer;
+    font-family: 'Audiowide', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-align: right;
+  }
+  
+  .theme-toggle:hover {
+    background-color: #0077b6;
+    color: white;
+  }
+  

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WeatherSnap</title>
+  <meta name="description" content="WeatherSnap – A fast, sleek weather app with real-time forecasts, current location, and dark mode.">
+
+
+ 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  
+
+  <div class="container">
+    <button id="theme-toggle" class="theme-toggle" title="Toggle Theme">🌙 Dark Mode</button>
+
+    <h1 class="title">🌤️ WeatherSnap </h1>
+
+    <div class="input-box">
+      <input id="city-input" type="text" placeholder="Enter City Name" />
+      <button id="search-button">Search</button>
+    </div>
+
+    <div class="weather-card" id="weather-card">
+      <h3 id="city-name">🌞 Good Morning! Check the weather by entering a city.</h3>
+      <p id="city-time" class="weather-info"></p>
+      <p id="city-temp" class="weather-info"></p>
+    </div>
+
+    <p id="error-message" class="error-msg"></p>
+
+    
+
+    <div class="location-box">
+      <h2>📍 Your Current Location Weather</h2>
+      <button id="location-button">Get Location</button>
+    </div>
+
+    <div id="weather-forecast" class="forecast-container">
+      
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+  <script src="currentLocation.js"></script>
+  <script src="forecast.js"></script>
+  <script src="toggle.js"></script>
+</body>
+</html>
